@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <h1>Demo: Отладка JavaScript в Chrome DevTools</h1>
-    <button>Показать / скрыть</button>
-    <div class="circle"></div>
-    <p></p>
+    <nav>
+    <p id = "demo"></p>
+  <button onclick = 'document.body.addEventListener ( "click", setWayPoint )'>Траектория</button>
+  <button onclick = 'document.body.removeEventListener ( "click", setWayPoint ); setPersonage () '>Запуск</button>
+</nav>
     <script src="index.js"></script>
   </body>
 </html>

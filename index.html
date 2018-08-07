@@ -1,19 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" href="a-level-ico.png"/>
-    <meta name="description" content="Тренажер для изучения Chrome DevTools">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <style>
+      body{
+        background: url(https://vignette.wikia.nocookie.net/runescape2/images/7/75/KBD_lair.png/revision/latest?cb=20121014121542) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+    </style>
+    <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="circle"></div>
-    <p></p>
-    <nav>
+     <nav>
     <p id = "demo"></p>
-	  <button onclick = 'document.body.addEventListener ( "click", setWayPoint )'>Траектория</button>
-	  <button onclick = 'document.body.removeEventListener ( "click", setWayPoint ); setPersonage () '>Запуск</button>
-    </nav>
-    <script src="index.js"></script>
+	<button onclick = 'document.body.addEventListener ( "click", setWayPoint )'>Траектория</button>
+	<button onclick = 'document.body.removeEventListener ( "click", setWayPoint ); setPersonage () '>Запуск</button>
+  </nav>
+<script src="index.js"></script>
   </body>
 </html>
